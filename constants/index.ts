@@ -1,6 +1,5 @@
 export const images = {
   yourlogo: "/assets/yourlogo.svg",
-  starForge: "/assets/starforge.svg",
   check: "/assets/check.svg",
   check2: "/assets/check-02.svg",
   loading1: "/assets/loading-01.svg",
