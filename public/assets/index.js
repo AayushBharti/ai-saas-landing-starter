@@ -1,4 +1,3 @@
-import starForge from "./starforge.svg"
 import check from "./check.svg"
 import starForgeSymbol from "./starforge-symbol.svg"
 import starForgeWhiteSymbol from "./starforge-symbol-white.svg"
@@ -76,7 +75,6 @@ import telegram from "./socials/telegram.svg"
 import twitter from "./socials/twitter.svg"
 
 export {
-  starForge,
   check,
   check2,
   loading1,
