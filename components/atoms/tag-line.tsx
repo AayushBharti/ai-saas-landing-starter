@@ -8,7 +8,7 @@ const TagLine = ({ className, children }: Props) => {
   return (
     <div className={cn("tagline flex items-center", className)}>
       {brackets("left")}
-      <div className="text-n-3 mx-3">{children}</div>
+      <div className="mx-3 text-n-3">{children}</div>
       {brackets("right")}
     </div>
   );
