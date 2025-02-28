@@ -11,7 +11,7 @@
 
 ![demo](./public/thumbnail.png)
 
-[![aayushbharti](https://custom-icon-badges.demolab.com/badge/made%20by%20-aayushbharti-556bf2?logo=github&logoColor=white&labelColor=101827)](https://github.com/luadnjexa)
+[![aayushbharti](https://custom-icon-badges.demolab.com/badge/made%20by%20-aayushbharti-556bf2?logo=github&logoColor=white&labelColor=101827)](https://github.com/aayushbharti)
 [![License](https://img.shields.io/github/license/aayushbharti/ai-saas-landing-starter?color=dddddd&labelColor=000000)](https://github.com/aayushbharti/ai-saas-landing-starter/blob/main/LICENSE)
 [![Top Language](https://img.shields.io/github/languages/top/aayushbharti/ai-saas-landing-starter?logo=github&logoColor=%23007ACC&label=TypeScript)](https://www.typescriptlang.org/)
 [![Contributors](https://img.shields.io/github/contributors/aayushbharti/ai-saas-landing-starter?style=flat&color=orange&label=Contributors)](https://github.com/aayushbharti/ai-saas-landing-starter/graphs/contributors)
@@ -25,7 +25,7 @@
 ## 🌐 Live Demo
 
 Explore the live demonstration of the project:
-[ai-saas-landing-starter](https://ab-star-forge.vercel.app.vercel.app/)
+[ai-saas-landing-starter](https://ai-saas-landing-starter.vercel.app/)
 
 ## 📝 Description
 
@@ -288,7 +288,7 @@ project and made it possible:
 
 <!-- [![Telegram](https://img.shields.io/badge/Telegram-@aayushbharti-2CA5E0?style=social&logo=telegram&logoColor=000000)](https://t.me/aayushbharti) -->
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-aayushbharti-blue?style=flat&logo=linkedin&logoColor=b0c0c0&labelColor=363D44)](https://www.linkedin.com/in/lironabutbul)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-aayushbharti-blue?style=flat&logo=linkedin&logoColor=b0c0c0&labelColor=363D44)](https://www.linkedin.com/in/iaayushbharti)
 
 <!-- [![Instagram](https://img.shields.io/badge/Instagram-aayushbharti-grey?style=flat&logo=instagram&logoColor=b0c0c0&labelColor=8134af)](https://www.instagram.com/aayushbharti) -->
 
