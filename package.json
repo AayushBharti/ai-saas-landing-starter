@@ -11,24 +11,24 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.0.2",
     "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-tailwindcss": "^3.15.1",
-    "next": "14.2.3",
-    "prettier": "^3.2.5",
-    "react": "^18",
-    "react-dom": "^18",
+    "eslint-plugin-tailwindcss": "^3.18.0",
+    "next": "15.2.0",
+    "prettier": "^3.5.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-just-parallax": "^3.1.16",
-    "tailwind-merge": "^2.3.0"
+    "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "@types/node": "^22.13.6",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.2.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2"
   }
 }
