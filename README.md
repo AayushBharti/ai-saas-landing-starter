@@ -137,7 +137,7 @@ ai-saas-landing-starter/
 
 ## ✨ Technologies Used
 
-<details><summary><b>Brianwave</b> is built using the following technologies:</summary>
+<details><summary><b>StarForge</b> is built using the following technologies:</summary>
 
 - [TypeScript](https://www.typescriptlang.org/): TypeScript is a typed superset
   of JavaScript that compiles to plain JavaScript.
