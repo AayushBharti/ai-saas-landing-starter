@@ -5,6 +5,7 @@ import Image from "next/image"
 import Button from "@/components/atoms/button"
 import { cn } from "@/lib/utils"
 import { LeftCurve, RightCurve } from "@/components/design/collaboration"
+import { OrbitingCircles } from "@/components/ui/orbiting-circles"
 
 type Props = {}
 
@@ -42,45 +43,45 @@ const Collaboration = (props: Props) => {
             {collabText}
           </p>
 
-          <div className="relative left-1/2 flex aspect-square w-[22rem] -translate-x-1/2 scale-75 rounded-full border border-n-6 md:scale-100">
+          <div className="relative left-1/2 flex aspect-square w-[22rem] -translate-x-1/2 scale-75 rounded-full border border-n-8 md:scale-100">
             <div className="m-auto flex aspect-square w-60 rounded-full border border-n-6">
-              <div className="m-auto aspect-square w-24 rounded-full bg-conic-gradient p-[0.2rem]">
-                <div className="flex h-full items-center justify-center rounded-full bg-n-8">
+              <div className="relative m-auto aspect-square w-24 rounded-full p-[0.2rem]">
+                <div className="absolute inset-0 animate-spin rounded-full bg-conic-gradient" />
+
+                <div className="relative flex h-full items-center justify-center rounded-full bg-n-8">
                   <Image
                     src={images.starForgeSymbol}
                     width={48}
                     height={48}
                     alt="StarForge"
+                    draggable={false}
                   />
                 </div>
               </div>
             </div>
 
             <ul>
-              {collabApps.map((item, index) => (
-                <li
-                  key={item.id}
-                  className={cn(
-                    "absolute left-1/2 top-0 -ml-[1.6rem] h-1/2 origin-bottom",
-                    `rotate-${index * 45}`,
-                  )}
-                >
+              <OrbitingCircles
+                className="absolute left-1/2 top-[90px] -ml-[2.9rem] h-1/2 origin-bottom"
+                iconSize={95}
+                radius={175}
+              >
+                {collabApps.map(item => (
                   <div
-                    className={cn(
-                      "relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl",
-                      `-rotate-${index * 45}`,
-                    )}
+                    key={item.id}
+                    className="rounded-xl border border-n-5 p-2.5"
                   >
                     <Image
                       src={item.icon}
                       alt={item.title}
                       width={36}
                       height={36}
-                      className="m-auto"
+                      draggable={false}
+                      className="m-auto aspect-square"
                     />
                   </div>
-                </li>
-              ))}
+                ))}
+              </OrbitingCircles>
             </ul>
 
             <LeftCurve />
