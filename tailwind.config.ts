@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss";
-import plugin from "tailwindcss/plugin";
-import { fontFamily } from "tailwindcss/defaultTheme";
+import type { Config } from "tailwindcss"
+import plugin from "tailwindcss/plugin"
+import { fontFamily } from "tailwindcss/defaultTheme"
 
 const config: Config = {
   content: [
@@ -81,14 +81,30 @@ const config: Config = {
         "benefit-card-5": "url(assets/benefits/card-5.svg)",
         "benefit-card-6": "url(assets/benefits/card-6.svg)",
       },
+      animation: {
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
+      },
+      keyframes: {
+        orbit: {
+          "0%": {
+            transform:
+              "rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg))",
+          },
+          "100%": {
+            transform:
+              "rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))",
+          },
+        },
+      },
     },
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
-      addBase({});
+      addBase({})
       addComponents({
         ".container": {
-          "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]": {},
+          "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
+            {},
         },
         ".h1": {
           "@apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]":
@@ -121,7 +137,8 @@ const config: Config = {
           "@apply text-sm": {},
         },
         ".tagline": {
-          "@apply font-grotesk font-light text-xs tracking-tagline uppercase": {},
+          "@apply font-grotesk font-light text-xs tracking-tagline uppercase":
+            {},
         },
         ".quote": {
           "@apply font-code text-lg leading-normal": {},
@@ -129,14 +146,14 @@ const config: Config = {
         ".button": {
           "@apply font-code text-xs font-bold uppercase tracking-wider": {},
         },
-      });
+      })
       addUtilities({
         ".tap-highlight-color": {
           "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
         },
-      });
+      })
     }),
   ],
-};
+}
 
-export default config;
+export default config
