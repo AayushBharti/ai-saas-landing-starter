@@ -1,6 +1,6 @@
 {
-  "name": "nextjs14-saas-landing-page",
-  "version": "0.1.0",
+  "name": "ai-saas-landing-page",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,12 +9,31 @@
     "lint": "next lint",
     "ts:check": "tsc --noEmit"
   },
+  "author": "Aayush Bharti",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aayushbharti/ai-saas-landing-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aayushbharti/ai-saas-landing-starter/issues"
+  },
+  "keywords": [
+    "ai",
+    "saas",
+    "landing-page",
+    "nextjs",
+    "tailwindcss",
+    "react",
+    "typescript"
+  ],
   "dependencies": {
+    "@number-flow/react": "^0.5.10",
     "clsx": "^2.1.1",
     "critters": "^0.0.25",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-tailwindcss": "^3.18.2",
+    "motion": "^12.23.12",
     "next": "15.5.0",
     "prettier": "^3.6.2",
     "react": "^19.1.1",
