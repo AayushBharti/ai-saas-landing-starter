@@ -196,7 +196,7 @@ export const pricing = [
     id: "0",
     title: "Basic",
     description: "AI chatbot, personalized recommendations",
-    price: "0",
+    price: "2.49",
     features: [
       "An AI chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",
