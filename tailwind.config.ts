@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss"
-import plugin from "tailwindcss/plugin"
 import { fontFamily } from "tailwindcss/defaultTheme"
+import plugin from "tailwindcss/plugin"
 
 const config: Config = {
   content: [
@@ -83,6 +83,9 @@ const config: Config = {
       },
       animation: {
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
+        marquee: "marquee calc(var(--duration)) linear infinite",
+        "marquee-vertical":
+          "marquee-vertical calc(var(--duration)) linear infinite",
       },
       keyframes: {
         orbit: {
@@ -93,6 +96,22 @@ const config: Config = {
           "100%": {
             transform:
               "rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))",
+          },
+        },
+        marquee: {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(calc(-100% - var(--gap)))",
+          },
+        },
+        "marquee-vertical": {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          "100%": {
+            transform: "translateY(calc(-100% - var(--gap)))",
           },
         },
       },
