@@ -1,16 +1,16 @@
 "use client"
 
-import React, { useRef } from "react"
-import Section from "../../layout/section"
+import { heroIcons, images } from "@/constants"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
-import { images, heroIcons } from "@/constants"
-import Button from "../../atoms/button"
-import { BackgroundCircles, BottomLine, Gradient } from "../../design/hero"
+import { useRef } from "react"
 import { ScrollParallax } from "react-just-parallax"
+import Button from "../../atoms/button"
 import Generating from "../../atoms/generating"
-import Notification from "./notification"
+import { BackgroundCircles, BottomLine, Gradient } from "../../design/hero"
+import Section from "../../layout/section"
 import CompanyLogos from "./company-logos"
+import Notification from "./notification"
 
 type Props = {}
 
@@ -105,7 +105,7 @@ const Hero = (props: Props) => {
           <BackgroundCircles parallaxRef={parallaxRef} />
         </div>
 
-        <CompanyLogos className="relative z-10 mt-20 hidden lg:block" />
+        <CompanyLogos className="relative z-10 mt-20" />
       </div>
       <BottomLine />
     </Section>
