@@ -33,7 +33,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-tailwindcss": "^3.18.2",
-    "motion": "^12.23.12",
+    "motion": "^12.23.24",
     "next": "15.5.4",
     "prettier": "^3.6.2",
     "react": "^19.1.1",
