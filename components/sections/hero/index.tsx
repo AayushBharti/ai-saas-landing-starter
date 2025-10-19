@@ -27,9 +27,9 @@ const Hero = (props: Props) => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24">
           <h1 className="h1 mb-6">
-            Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
+            While others are talking about&nbsp;AI,{" "}
             <span className="relative inline-block">
-              StarForge
+              Vibe Riders 
               <Image
                 src={images.curve}
                 className="absolute left-0 top-full w-full xl:-mt-2"
@@ -38,14 +38,19 @@ const Hero = (props: Props) => {
                 alt="curve"
               />
             </span>
+            &nbsp;are building the future.
           </h1>
           <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
-            Unleash the power of AI within StarForge. Upgrade your productivity
-            with StarForge, the open AI chat app.
+            Learn and grow with a global community of students, professionals and entrepreneurs. Become a leader in the AI revolution.
           </p>
           <Button href="#pricing" white>
-            Get Started
+            Join a Free 'Vibe Coding' Workshop
           </Button>
+          <p className="mt-4 font-code text-xs font-bold uppercase tracking-wider text-n-1">
+            <a href="#pricing" className="border-b transition-colors hover:text-color-1">
+              Become a Vibe Rider for USD3 / month
+            </a>
+          </p>
         </div>
 
         <div
@@ -65,7 +70,7 @@ const Hero = (props: Props) => {
                   src={images.robot}
                   width={1024}
                   height={490}
-                  className="w-full translate-y-[8%] scale-[1.7] md:translate-y-[-10%] md:scale-100 lg:translate-y-[-23%]"
+                  className="w-full translate-y-[18%] scale-[1.3] md:translate-y-[-10%] md:scale-100 lg:translate-y-[-13%]"
                   alt="AI"
                 />
 
@@ -84,7 +89,7 @@ const Hero = (props: Props) => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="absolute bottom-44 right-[-5.5rem] hidden w-72 xl:flex"
-                    title="Code generation"
+                    title="Upgrading..."
                   />
                 </ScrollParallax>
               </div>

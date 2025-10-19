@@ -64,7 +64,7 @@ const Navbar = (props: Props) => {
       >
         <Link href="#hero" className={cn(`w-48 xl:mr-8 flex items-center gap-2`)}>
           <Image src={starForgeSymbol} alt="StarForge" width={40} height={40} />
-          <p className="text-2xl font-grotesk font-extrabold tracking-wide">StarForge</p>
+          <p className="text-2xl font-grotesk font-extrabold tracking-wide">Vibe Riders</p>
         </Link>
 
         <nav

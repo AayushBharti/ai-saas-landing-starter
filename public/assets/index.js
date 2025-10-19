@@ -9,6 +9,10 @@ import check2 from "./check-02.svg"
 import loading1 from "./loading-01.svg"
 import yourlogo from "./yourlogo.svg"
 import homeSmile from "./home-smile.svg"
+import cpuChip from "./cpu-chip.svg"
+import fingerPrint from "./finger-print.svg"
+import userGroup from "./user-group.svg"
+import sparkles from "./sparkles.svg"
 import file02 from "./file-02.svg"
 import searchMd from "./search-md.svg"
 import plusSquare from "./plus-square.svg"
@@ -62,11 +66,12 @@ import benefitCard3 from "./benefits/card-3.svg"
 import benefitCard4 from "./benefits/card-4.svg"
 import benefitCard5 from "./benefits/card-5.svg"
 import benefitCard6 from "./benefits/card-6.svg"
-import benefitIcon1 from "./benefits/icon-1.svg"
+import rocketIcon from "./rocket.svg"
 import benefitIcon2 from "./benefits/icon-2.svg"
 import benefitIcon3 from "./benefits/icon-3.svg"
 import benefitIcon4 from "./benefits/icon-4.svg"
 import benefitImage2 from "./benefits/image-2.png"
+import vibeCodingImage from "./benefits/yellow-v.jpg"
 
 import discordBlack from "./socials/discord.svg"
 import facebook from "./socials/facebook.svg"
@@ -86,6 +91,10 @@ export {
   grid,
   yourlogo,
   homeSmile,
+  cpuChip,
+  fingerPrint,
+  userGroup,
+  sparkles,
   file02,
   searchMd,
   plusSquare,
@@ -132,7 +141,8 @@ export {
   benefitCard4,
   benefitCard5,
   benefitCard6,
-  benefitIcon1,
+  rocketIcon,
+  vibeCodingImage,
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
