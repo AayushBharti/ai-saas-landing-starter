@@ -37,3 +37,45 @@ next-env.d.ts
 
 # git
 .git
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Additional log files
+*.log
+logs/
+
+# Cache directories
+.cache/
+.eslintcache
+
+# Environment files
+.env
+.env.test
+.env.production
+
+# Coverage and testing
+coverage/
+.nyc_output
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Additional OS files
+.AppleDouble
+.LSOverride
+ehthumbs.db
+Desktop.ini
+
+README-OG.md
