@@ -101,9 +101,9 @@ reference or inspiration for future modern applications or websites in general.
 
 ![Animated Bento grid](/.github/images/img2.jpeg "Animated Bento grid")
 
-![Animated Pricing section](/.github/images/img3.jpeg "Animated Pricing section")
+<!-- ![Animated Pricing section](/.github/images/img3.jpeg "Animated Pricing section")
 
-![Beautiful Grid](/.github/images/img4.jpeg "Beautiful Grid")
+![Beautiful Grid](/.github/images/img4.jpeg "Beautiful Grid") -->
 
 
 ## ✨ Technologies Used
