@@ -61,22 +61,16 @@
 <details>
 <summary>Table of Contents</summary>
 
-- [Live Demo](#-live-demo)
-- [Description](#-description)
+- [About the Project](#about-the-project)
+- [Getting Started](#-getting-started)
+- [Screenshots](#-screenshots)
 - [Technologies Used](#-technologies-used)
-- [Get Started](#-get-started)
-  - [Prerequisites](#-prerequisites)
-  - [Installation and Run Locally](#-installation-and-run-locally)
-  - [Scripts](#-scripts)
-- [Deployment](#-deployment)
-  - [Deploy to production (manual)](#-deploy-to-production-manual)
-  - [Deploy on Vercel (recommended)](#-deploy-on-vercel-recommended)
-  - [Deploy on Netlify](#-deploy-on-netlify)
 - [Contributing](#-contributing)
-  - [Bug / Feature Request](#-bug--feature-request)
 - [Acknowledgements](#-acknowledgements)
-- [Contact Us](#-contact-us)
-- [License](#-license)
+- [Follow Me](#-follow-me)
+- [Deployment](#-deployment)
+- [Give A Star](#-give-a-star)
+- [Star History](#-star-history)
 
 </details>
 
