@@ -62,9 +62,9 @@
 <summary>Table of Contents</summary>
 
 - [About the Project](#about-the-project)
-- [Getting Started](#-getting-started)
 - [Screenshots](#-screenshots)
 - [Technologies Used](#-technologies-used)
+- [Getting Started](#-getting-started)
 - [Contributing](#-contributing)
 - [Acknowledgements](#-acknowledgements)
 - [Follow Me](#-follow-me)
@@ -80,20 +80,6 @@
 Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless
 animations, and overall user experience set a high standard, serving as a
 reference or inspiration for future modern applications or websites in general.
-
-
-## 🧰 Getting Started
-
-1. Make sure [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/en/) are installed.
-2. Fork this repository on GitHub and clone **your fork** to your local machine:
-
-   ```bash
-   git clone https://github.com/<your-username>/ai-saas-landing-starter.git
-   cd ai-saas-landing-starter
-   ```
-3. Open the terminal in the project root and run `pnpm install` to install dependencies.
-4. Start the development server with `pnpm dev`.
-<!-- 5. Visit **[http://localhost:3000](http://localhost:3000)** in your browser to see it live 🚀. -->
 
 ## 📷 Screenshots
 
@@ -133,7 +119,18 @@ reference or inspiration for future modern applications or websites in general.
 
 [![Stats for StarForge](/.github/images/stats.svg "Stats for StarForge")](https://pagespeed.web.dev/analysis?url=https://ai-saas-landing-starter.vercel.app/ "Stats for StarForge") -->
 
+## 🧰 Setup
 
+1. Make sure [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/en/) are installed.
+2. Fork this repository on GitHub and clone **your fork** to your local machine:
+
+   ```bash
+   git clone https://github.com/<your-username>/ai-saas-landing-starter.git
+   cd ai-saas-landing-starter
+   ```
+3. Open the terminal in the project root and run `pnpm install` to install dependencies.
+4. Start the development server with `pnpm dev`.
+<!-- 5. Visit **[http://localhost:3000](http://localhost:3000)** in your browser to see it live 🚀. -->
 
 ## 🔧 Contributing
 
