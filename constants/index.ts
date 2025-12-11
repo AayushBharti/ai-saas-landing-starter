@@ -66,7 +66,7 @@ export const images = {
   instagram: "/assets/socials/instagram.svg",
   telegram: "/assets/socials/telegram.svg",
   twitter: "/assets/socials/twitter.svg",
-}
+};
 
 const {
   yourlogo,
@@ -104,7 +104,7 @@ const {
   instagram,
   telegram,
   twitter,
-} = images
+} = images;
 
 export const navigation = [
   { id: "0", title: "Features", url: "#features" },
@@ -113,19 +113,19 @@ export const navigation = [
   { id: "3", title: "Roadmap", url: "#roadmap" },
   { id: "4", title: "New account", url: "#signup", onlyMobile: true },
   { id: "5", title: "Sign in", url: "#login", onlyMobile: true },
-]
+];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare]
+export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
-export const notificationImages = [notification4, notification3, notification2]
+export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo]
+export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const starForgeServices = [
   "Photo generating",
   "Photo enhance",
   "Seamless Integration",
-]
+];
 
 export const starForgeServicesIcons = [
   recording03,
@@ -133,7 +133,7 @@ export const starForgeServicesIcons = [
   disc02,
   chromecast,
   sliders04,
-]
+];
 
 export const roadmap = [
   {
@@ -169,16 +169,16 @@ export const roadmap = [
     status: "progress",
     imageUrl: roadmap4,
   },
-]
+];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter."
+  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
 
 export const collabContent = [
   { id: "0", title: "Seamless Integration", text: collabText },
   { id: "1", title: "Smart Automation" },
   { id: "2", title: "Top-notch Security" },
-]
+];
 
 export const collabApps = [
   { id: "0", title: "Figma", icon: figma, width: 26, height: 36 },
@@ -189,7 +189,7 @@ export const collabApps = [
   { id: "5", title: "Protopie", icon: protopie, width: 34, height: 34 },
   { id: "6", title: "Framer", icon: framer, width: 26, height: 34 },
   { id: "7", title: "Raindrop", icon: raindrop, width: 38, height: 32 },
-]
+];
 
 export const pricing = [
   {
@@ -225,7 +225,7 @@ export const pricing = [
       "Ability to explore the app and its features without any cost",
     ],
   },
-]
+];
 
 export const benefits = [
   {
@@ -278,7 +278,7 @@ export const benefits = [
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
-]
+];
 
 export const socials = [
   { id: "0", title: "Discord", iconUrl: discordBlack, url: "#" },
@@ -286,4 +286,4 @@ export const socials = [
   { id: "2", title: "Instagram", iconUrl: instagram, url: "#" },
   { id: "3", title: "Telegram", iconUrl: telegram, url: "#" },
   { id: "4", title: "Facebook", iconUrl: facebook, url: "#" },
-]
+];

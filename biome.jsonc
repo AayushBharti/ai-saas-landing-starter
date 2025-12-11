@@ -1,0 +1,57 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["ultracite/core"],
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noUnknownAtRules": "off",
+        "noExplicitAny": "warn",
+        "noConsole": "off",
+        "noArrayIndexKey": "off",
+        "noEvolvingTypes": "off",
+        "noGlobalIsNan": "off",
+        "noDoubleEquals": "off"
+      },
+      "nursery": {
+        "noReactForwardRef": "off",
+        "noShadow": "off"
+      },
+      "performance": {
+        "noBarrelFile": "off",
+        "noImgElement": "off",
+        "noNamespaceImport": "off",
+        "useTopLevelRegex": "off"
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "warn",
+        "noForEach": "off",
+        "noUselessTernary": "off",
+        "noStaticOnlyClass": "off"
+      },
+      "correctness": {
+        "noUnusedFunctionParameters": "off",
+        "noUnusedVariables": "warn",
+        "noInvalidPositionAtImportRule": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "noLabelWithoutControl": "off",
+        "useButtonType": "off",
+        "useSemanticElements": "warn",
+        "useAriaPropsSupportedByRole": "warn"
+      },
+      "style": {
+        "noMagicNumbers": "off",
+        "useBlockStatements": "off",
+        "useNodejsImportProtocol": "off",
+        "noNegationElse": "off",
+        "useDefaultParameterLast": "off",
+        "noNonNullAssertion": "off",
+        "useTemplate": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      }
+    }
+  }
+}
