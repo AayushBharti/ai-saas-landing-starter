@@ -1,41 +1,41 @@
-"use client"
+"use client";
 
-import Button from "@/components/atoms/button"
-import { images, pricing } from "@/constants"
-import React, { useState } from "react"
-import Image from "next/image"
-import { Tab } from "./pricing-tab"
-import NumberFlow from "@number-flow/react"
+import NumberFlow from "@number-flow/react";
+import Image from "next/image";
+import { useState } from "react";
+import Button from "@/components/atoms/button";
+import { images, pricing } from "@/constants";
+import { Tab } from "./pricing-tab";
 
-type Props = {}
-
-const PricingList = (props: Props) => {
-  const [selected, setSelected] = useState("Monthly")
+const PricingList = () => {
+  const [selected, setSelected] = useState("Monthly");
 
   return (
     <div className="flex flex-col gap-4 max-lg:flex-wrap">
       <div className="mx-auto mb-6 flex w-fit rounded-full bg-n-6/50 p-1 shadow-sm">
         <Tab
-          text="Monthly"
           selected={selected === "Monthly"}
           setSelected={() => setSelected("Monthly")}
+          text="Monthly"
         />
         <Tab
-          text="Yearly"
           discount={true}
           selected={selected === "Yearly"}
           setSelected={() => setSelected("Yearly")}
+          text="Yearly"
         />
       </div>
       <div className="flex gap-4 max-lg:flex-col">
-        {pricing.map(item => {
+        {pricing.map((item) => {
           const price =
-            selected === "Monthly" ? item.price : Number(item.price) * 12 * 0.75
+            selected === "Monthly"
+              ? item.price
+              : Number(item.price) * 12 * 0.75;
 
           return (
             <div
-              key={item.id}
               className="h-full w-[19rem] rounded-[2rem] border border-n-6 bg-n-8 px-6 odd:my-4 odd:py-8 even:py-14 max-lg:w-full lg:w-auto [&>h4]:first:text-color-2 [&>h4]:last:text-color-3 [&>h4]:even:text-color-1"
+              key={item.id}
             >
               <h4 className="h4 mb-4">{item.title}</h4>
               <p className="body-2 mb-3 min-h-16 text-n-1/50">
@@ -43,13 +43,13 @@ const PricingList = (props: Props) => {
               </p>
 
               <div className="mb-6 flex h-[5.5rem] items-center">
-                {item.price && (
+                {!!item.price && (
                   <>
                     <span className="h2">$</span>
-                    <span className="text-[5.5rem] font-bold leading-none">
+                    <span className="font-bold text-[5.5rem] leading-none">
                       <NumberFlow
-                        value={Number(price)}
                         suffix={selected === "Monthly" ? "/mo" : "/yr"}
+                        value={Number(price)}
                       />
                     </span>
                   </>
@@ -67,25 +67,25 @@ const PricingList = (props: Props) => {
               <ul>
                 {item.features.map((feature, index) => (
                   <li
+                    className="flex items-start border-n-6 border-t py-5"
                     key={index}
-                    className="flex items-start border-t border-n-6 py-5"
                   >
                     <Image
+                      alt="check"
+                      height={24}
                       src={images.check}
                       width={24}
-                      height={24}
-                      alt="check"
                     />
                     <p className="body-2 ml-4">{feature}</p>
                   </li>
                 ))}
               </ul>
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PricingList
+export default PricingList;
