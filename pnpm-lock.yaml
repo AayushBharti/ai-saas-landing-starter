@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@number-flow/react':
         specifier: ^0.5.10
-        version: 0.5.10(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        version: 0.5.10(react-dom@19.2.1(react@19.2.3))(react@19.2.3)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -19,22 +19,22 @@ importers:
         version: 0.0.25
       motion:
         specifier: ^12.23.24
-        version: 12.23.26(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        version: 12.23.26(react-dom@19.2.1(react@19.2.3))(react@19.2.3)
       next:
         specifier: 16.0.10
-        version: 16.0.10(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        version: 16.0.10(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.1(react@19.2.3))(react@19.2.3)
       prettier:
         specifier: ^3.6.2
         version: 3.7.4
       react:
-        specifier: ^19.2.0
-        version: 19.2.1
+        specifier: ^19.2.3
+        version: 19.2.3
       react-dom:
         specifier: ^19.2.0
-        version: 19.2.1(react@19.2.1)
+        version: 19.2.1(react@19.2.3)
       react-just-parallax:
         specifier: ^3.1.16
-        version: 3.1.16(react@19.2.1)
+        version: 3.1.16(react@19.2.3)
       tailwind-merge:
         specifier: ^3.4.0
         version: 3.4.0
@@ -828,8 +828,8 @@ packages:
     peerDependencies:
       react: '>=16.8 || ^17.0.0 || ^18.0.0'
 
-  react@19.2.1:
-    resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
+  react@19.2.3:
+    resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -1191,12 +1191,12 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@number-flow/react@0.5.10(react-dom@19.2.1(react@19.2.1))(react@19.2.1)':
+  '@number-flow/react@0.5.10(react-dom@19.2.1(react@19.2.3))(react@19.2.3)':
     dependencies:
       esm-env: 1.2.2
       number-flow: 0.5.8
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.1(react@19.2.3)
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -1363,14 +1363,14 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
-  framer-motion@12.23.26(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  framer-motion@12.23.26(react-dom@19.2.1(react@19.2.3))(react@19.2.3):
     dependencies:
       motion-dom: 12.23.23
       motion-utils: 12.23.6
       tslib: 2.8.1
     optionalDependencies:
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.1(react@19.2.3)
 
   framesync@6.1.0:
     dependencies:
@@ -1455,13 +1455,13 @@ snapshots:
 
   motion-utils@12.23.6: {}
 
-  motion@12.23.26(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  motion@12.23.26(react-dom@19.2.1(react@19.2.3))(react@19.2.3):
     dependencies:
-      framer-motion: 12.23.26(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      framer-motion: 12.23.26(react-dom@19.2.1(react@19.2.3))(react@19.2.3)
       tslib: 2.8.1
     optionalDependencies:
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.1(react@19.2.3)
 
   mz@2.7.0:
     dependencies:
@@ -1471,15 +1471,15 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  next@16.0.10(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  next@16.0.10(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.1(react@19.2.3))(react@19.2.3):
     dependencies:
       '@next/env': 16.0.10
       '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001760
       postcss: 8.4.31
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
-      styled-jsx: 5.1.6(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.1(react@19.2.3)
+      styled-jsx: 5.1.6(react@19.2.3)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.0.10
       '@next/swc-darwin-x64': 16.0.10
@@ -1593,19 +1593,19 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-dom@19.2.1(react@19.2.1):
+  react-dom@19.2.1(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
       scheduler: 0.27.0
 
-  react-just-parallax@3.1.16(react@19.2.1):
+  react-just-parallax@3.1.16(react@19.2.3):
     dependencies:
       framesync: 6.1.0
       lodash.debounce: 4.0.8
       prefix: 1.0.0
-      react: 19.2.1
+      react: 19.2.3
 
-  react@19.2.1: {}
+  react@19.2.3: {}
 
   read-cache@1.0.0:
     dependencies:
@@ -1668,10 +1668,10 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
-  styled-jsx@5.1.6(react@19.2.1):
+  styled-jsx@5.1.6(react@19.2.3):
     dependencies:
       client-only: 0.0.1
-      react: 19.2.1
+      react: 19.2.3
 
   sucrase@3.35.1:
     dependencies:

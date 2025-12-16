@@ -38,7 +38,7 @@
     "motion": "^12.23.24",
     "next": "16.0.10",
     "prettier": "^3.6.2",
-    "react": "^19.2.0",
+    "react": "^19.2.3",
     "react-dom": "^19.2.0",
     "react-just-parallax": "^3.1.16",
     "tailwind-merge": "^3.4.0"
