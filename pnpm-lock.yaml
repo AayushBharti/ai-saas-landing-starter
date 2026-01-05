@@ -64,8 +64,8 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
       ultracite:
-        specifier: 6.5.0
-        version: 6.5.0(typescript@5.9.3)
+        specifier: 7.0.8
+        version: 7.0.8(typescript@5.9.3)
 
 packages:
 
@@ -373,6 +373,46 @@ packages:
     peerDependencies:
       react: ^18 || ^19
       react-dom: ^18 || ^19
+
+  '@oxlint/darwin-arm64@1.36.0':
+    resolution: {integrity: sha512-MJkj82GH+nhvWKJhSIM6KlZ8tyGKdogSQXtNdpIyP02r/tTayFJQaAEWayG2Jhsn93kske+nimg5MYFhwO/rlg==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@oxlint/darwin-x64@1.36.0':
+    resolution: {integrity: sha512-VvEhfkqj/99dCTqOcfkyFXOSbx4lIy5u2m2GHbK4WCMDySokOcMTNRHGw8fH/WgQ5cDrDMSTYIGQTmnBGi9tiQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@oxlint/linux-arm64-gnu@1.36.0':
+    resolution: {integrity: sha512-EMx92X5q+hHc3olTuj/kgkx9+yP0p/AVs4yvHbUfzZhBekXNpUWxWvg4hIKmQWn+Ee2j4o80/0ACGO0hDYJ9mg==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@oxlint/linux-arm64-musl@1.36.0':
+    resolution: {integrity: sha512-7YCxtrPIctVYLqWrWkk8pahdCxch6PtsaucfMLC7TOlDt4nODhnQd4yzEscKqJ8Gjrw1bF4g+Ngob1gB+Qr9Fw==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@oxlint/linux-x64-gnu@1.36.0':
+    resolution: {integrity: sha512-lnaJVlx5r3NWmoOMesfQXJSf78jHTn8Z+sdAf795Kgteo72+qGC1Uax2SToCJVN2J8PNG3oRV5bLriiCNR2i6Q==}
+    cpu: [x64]
+    os: [linux]
+
+  '@oxlint/linux-x64-musl@1.36.0':
+    resolution: {integrity: sha512-AhuEU2Qdl66lSfTGu/Htirq8r/8q2YnZoG3yEXLMQWnPMn7efy8spD/N1NA7kH0Hll+cdfwgQkQqC2G4MS2lPQ==}
+    cpu: [x64]
+    os: [linux]
+
+  '@oxlint/win32-arm64@1.36.0':
+    resolution: {integrity: sha512-GlWCBjUJY2QgvBFuNRkiRJu7K/djLmM0UQKfZV8IN+UXbP/JbjZHWKRdd4LXlQmzoz7M5Hd6p+ElCej8/90FCg==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@oxlint/win32-x64@1.36.0':
+    resolution: {integrity: sha512-J+Vc00Utcf8p77lZPruQgb0QnQXuKnFogN88kCnOqs2a83I+vTBB8ILr0+L9sTwVRvIDMSC0pLdeQH4svWGFZg==}
+    cpu: [x64]
+    os: [win32]
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -725,6 +765,16 @@ packages:
     resolution: {integrity: sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==}
     engines: {node: '>= 6'}
 
+  oxlint@1.36.0:
+    resolution: {integrity: sha512-IicUdXfXgI8OKrDPnoSjvBfeEF8PkKtm+CoLlg4LYe4ypc8U+T4r7730XYshdBGZdelg+JRw8GtCb2w/KaaZvw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    hasBin: true
+    peerDependencies:
+      oxlint-tsgolint: '>=0.10.0'
+    peerDependenciesMeta:
+      oxlint-tsgolint:
+        optional: true
+
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
 
@@ -963,8 +1013,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  ultracite@6.5.0:
-    resolution: {integrity: sha512-HrXvM0CX/S3t5HEoepWQ6kpMVD9mzNB5X0k/T7zvNObQ6X9+s1pAE4efDR3Nc4KwqDiemK/bwI7pgPApT7Fktw==}
+  ultracite@7.0.8:
+    resolution: {integrity: sha512-b98lKaVl3UtH1TF6gZjhPQgtx063i0XpdV1nHEfexHsLyLaaosqU9FT8Tw/HwQkb/UmJ8WihKndur0bSUT0BYw==}
     hasBin: true
 
   undici-types@7.16.0:
@@ -973,8 +1023,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  zod@4.2.1:
-    resolution: {integrity: sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==}
+  zod@4.3.5:
+    resolution: {integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==}
 
 snapshots:
 
@@ -1201,6 +1251,30 @@ snapshots:
       number-flow: 0.5.8
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
+
+  '@oxlint/darwin-arm64@1.36.0':
+    optional: true
+
+  '@oxlint/darwin-x64@1.36.0':
+    optional: true
+
+  '@oxlint/linux-arm64-gnu@1.36.0':
+    optional: true
+
+  '@oxlint/linux-arm64-musl@1.36.0':
+    optional: true
+
+  '@oxlint/linux-x64-gnu@1.36.0':
+    optional: true
+
+  '@oxlint/linux-x64-musl@1.36.0':
+    optional: true
+
+  '@oxlint/win32-arm64@1.36.0':
+    optional: true
+
+  '@oxlint/win32-x64@1.36.0':
+    optional: true
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -1524,6 +1598,17 @@ snapshots:
 
   object-hash@3.0.0: {}
 
+  oxlint@1.36.0:
+    optionalDependencies:
+      '@oxlint/darwin-arm64': 1.36.0
+      '@oxlint/darwin-x64': 1.36.0
+      '@oxlint/linux-arm64-gnu': 1.36.0
+      '@oxlint/linux-arm64-musl': 1.36.0
+      '@oxlint/linux-x64-gnu': 1.36.0
+      '@oxlint/linux-x64-musl': 1.36.0
+      '@oxlint/win32-arm64': 1.36.0
+      '@oxlint/win32-x64': 1.36.0
+
   path-parse@1.0.7: {}
 
   path-scurry@2.0.1:
@@ -1745,12 +1830,12 @@ snapshots:
     dependencies:
       is-number: 7.0.0
 
-  trpc-cli@0.12.1(@trpc/server@11.8.1(typescript@5.9.3))(zod@4.2.1):
+  trpc-cli@0.12.1(@trpc/server@11.8.1(typescript@5.9.3))(zod@4.3.5):
     dependencies:
       commander: 14.0.2
     optionalDependencies:
       '@trpc/server': 11.8.1(typescript@5.9.3)
-      zod: 4.2.1
+      zod: 4.3.5
 
   ts-interface-checker@0.1.13: {}
 
@@ -1758,7 +1843,7 @@ snapshots:
 
   typescript@5.9.3: {}
 
-  ultracite@6.5.0(typescript@5.9.3):
+  ultracite@7.0.8(typescript@5.9.3):
     dependencies:
       '@clack/prompts': 0.11.0
       '@trpc/server': 11.8.1(typescript@5.9.3)
@@ -1766,13 +1851,14 @@ snapshots:
       glob: 13.0.0
       jsonc-parser: 3.3.1
       nypm: 0.6.2
-      picocolors: 1.1.1
-      trpc-cli: 0.12.1(@trpc/server@11.8.1(typescript@5.9.3))(zod@4.2.1)
-      zod: 4.2.1
+      oxlint: 1.36.0
+      trpc-cli: 0.12.1(@trpc/server@11.8.1(typescript@5.9.3))(zod@4.3.5)
+      zod: 4.3.5
     transitivePeerDependencies:
       - '@orpc/server'
       - '@valibot/to-json-schema'
       - effect
+      - oxlint-tsgolint
       - typescript
       - valibot
 
@@ -1780,4 +1866,4 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  zod@4.2.1: {}
+  zod@4.3.5: {}
