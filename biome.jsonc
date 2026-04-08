@@ -13,7 +13,6 @@
         "noDoubleEquals": "off"
       },
       "nursery": {
-        "noReactForwardRef": "off",
         "noShadow": "off"
       },
       "performance": {

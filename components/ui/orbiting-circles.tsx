@@ -1,4 +1,5 @@
-import React from "react";
+import type React from "react";
+import { Children } from "react";
 import { cn } from "@/lib/utils";
 
 export interface OrbitingCirclesProps
@@ -30,6 +31,7 @@ export function OrbitingCircles({
     <>
       {!!path && (
         <svg
+          aria-hidden="true"
           className="pointer-events-none absolute inset-0 size-full"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -43,12 +45,12 @@ export function OrbitingCircles({
           />
         </svg>
       )}
-      {React.Children.map(children, (child, index) => {
-        const angle = (360 / React.Children.count(children)) * index;
+      {Children.map(children, (child, index) => {
+        const angle = (360 / Children.count(children)) * index;
         return (
           <div
             className={cn(
-              "absolute flex size-[var(--icon-size)] transform-gpu animate-orbit items-center justify-center rounded-full",
+              "absolute flex size-(--icon-size) transform-gpu animate-orbit items-center justify-center rounded-full",
               { "[animation-direction:reverse]": reverse },
               className
             )}
