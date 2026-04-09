@@ -11,18 +11,26 @@ import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <main>
+    <>
+      <a
+        className="sr-only z-100 bg-color-1 px-4 py-2 font-semibold text-n-8 focus:not-sr-only focus:fixed focus:top-0 focus:left-0"
+        href="#main-content"
+      >
+        Skip to main content
+      </a>
       <div className={cn("overflow-hidden pt-[4.75rem] lg:pt-[5.25rem]")}>
         <Navbar />
-        <Hero />
-        <Benefits />
-        <Collaboration />
-        <Services />
-        <Pricing />
-        <Roadmap />
+        <main id="main-content">
+          <Hero />
+          <Benefits />
+          <Collaboration />
+          <Services />
+          <Pricing />
+          <Roadmap />
+        </main>
         <Footer />
       </div>
       <ButtonGradient />
-    </main>
+    </>
   );
 }
