@@ -22,8 +22,7 @@ const Navbar = () => {
         if (current === null) return;
 
         const sectionId = current.getAttribute("id");
-        // @ts-expect-error
-        const sectionHeight = current.offsetHeight;
+        const sectionHeight = (current as HTMLElement).offsetHeight;
         const sectionTop =
           current.getBoundingClientRect().top - sectionHeight * 0.2;
 
@@ -50,7 +49,7 @@ const Navbar = () => {
   };
 
   return (
-    <div
+    <header
       className={cn(
         "fixed top-0 left-0 z-50 w-full border-n-6 border-b lg:bg-n-8/90 lg:backdrop-blur-sm",
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
@@ -82,6 +81,7 @@ const Navbar = () => {
           >
             {navigation.map((item) => (
               <Link
+                aria-current={item.url === hash ? "page" : undefined}
                 className={cn(
                   "relative block font-code text-2xl text-n-1 uppercase transition-colors hover:text-color-1",
                   "lg:-mr-0.25 px-6 py-6 md:py-8 lg:font-semibold lg:text-xs",
@@ -111,6 +111,8 @@ const Navbar = () => {
         </Button>
 
         <Button
+          aria-expanded={openNavigation}
+          aria-label="Toggle navigation menu"
           className="ml-auto lg:hidden"
           onClick={toggleNavigation}
           px="px-3"
@@ -118,7 +120,7 @@ const Navbar = () => {
           <MenuSvg openNavigation={openNavigation} />
         </Button>
       </div>
-    </div>
+    </header>
   );
 };
 
