@@ -2,13 +2,17 @@ import Image from "next/image";
 import { images } from "@/constants";
 
 export const Gradient = () => (
-  <div className="pointer-events-none absolute top-[18.25rem] left-[-30.375rem] w-[56.625rem] opacity-60 mix-blend-color-dodge">
-    <div className="-translate-x-3/4 -translate-y-1/2 absolute top-1/2 left-1/2 size-[58.85rem]">
+  <div
+    aria-hidden="true"
+    className="pointer-events-none absolute top-73 -left-121.5 w-226.5 opacity-60 mix-blend-color-dodge"
+  >
+    <div className="absolute top-1/2 left-1/2 size-[58.85rem] -translate-x-3/4 -translate-y-1/2">
       <Image
-        alt="Gradient"
+        alt=""
         className="w-full"
         height={942}
         src={images.gradient}
+        style={{ height: "auto" }}
         width={942}
       />
     </div>
