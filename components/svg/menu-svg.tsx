@@ -1,5 +1,11 @@
 const MenuSvg = ({ openNavigation }: { openNavigation: boolean }) => (
-  <svg className="overflow-visible" height="12" viewBox="0 0 20 12" width="20">
+  <svg
+    aria-hidden="true"
+    className="overflow-visible"
+    height="12"
+    viewBox="0 0 20 12"
+    width="20"
+  >
     <rect
       className="origin-center transition-all"
       fill="white"

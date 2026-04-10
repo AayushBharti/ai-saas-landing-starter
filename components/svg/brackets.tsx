@@ -1,6 +1,7 @@
 const brackets = (position: "left" | "right") =>
   position === "left" ? (
     <svg
+      aria-hidden="true"
       fill="none"
       height="14"
       viewBox="0 0 5 14"
@@ -17,6 +18,7 @@ const brackets = (position: "left" | "right") =>
     </svg>
   ) : (
     <svg
+      aria-hidden="true"
       fill="none"
       height="14"
       viewBox="0 0 5 14"
