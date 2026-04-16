@@ -35,6 +35,9 @@ importers:
       react-just-parallax:
         specifier: ^3.1.16
         version: 3.1.16(react@19.2.4)
+      react-use-measure:
+        specifier: ^2.1.7
+        version: 2.1.7(react-dom@19.2.3(react@19.2.4))(react@19.2.4)
       tailwind-merge:
         specifier: ^3.4.0
         version: 3.4.0
@@ -799,6 +802,15 @@ packages:
     peerDependencies:
       react: '>=16.8 || ^17.0.0 || ^18.0.0'
 
+  react-use-measure@2.1.7:
+    resolution: {integrity: sha512-KrvcAo13I/60HpwGO5jpW7E9DfusKyLPLvuHlUyP5zqnmAPhNc6qTRjUQrdTADl0lpPpDVU2/Gg51UlOGHXbdg==}
+    peerDependencies:
+      react: '>=16.13'
+      react-dom: '>=16.13'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+
   react@19.2.4:
     resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
     engines: {node: '>=0.10.0'}
@@ -1496,6 +1508,12 @@ snapshots:
       lodash.debounce: 4.0.8
       prefix: 1.0.0
       react: 19.2.4
+
+  react-use-measure@2.1.7(react-dom@19.2.3(react@19.2.4))(react@19.2.4):
+    dependencies:
+      react: 19.2.4
+    optionalDependencies:
+      react-dom: 19.2.3(react@19.2.4)
 
   react@19.2.4: {}
 
