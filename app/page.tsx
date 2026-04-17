@@ -18,7 +18,7 @@ export default function Home() {
       >
         Skip to main content
       </a>
-      <div className={cn("overflow-hidden pt-[4.75rem] lg:pt-[5.25rem]")}>
+      <div className={cn("overflow-hidden pt-16 lg:pt-37")}>
         <Navbar />
         <main id="main-content">
           <Hero />
