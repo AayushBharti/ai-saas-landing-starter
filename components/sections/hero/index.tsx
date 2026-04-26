@@ -16,14 +16,14 @@ const Hero = () => {
   const parallaxRef = useRef(null);
   return (
     <Section
-      className={cn("-mt-[5.25rem] pt-[12rem]")}
+      className={cn("-mt-26 pt-40")}
       crosses
-      crossesOffset="lg:translate-y-[5.25rem]"
+      crossesOffset="lg:translate-y-21"
       customPaddings
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
-        <div className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24">
+        <div className="relative z-1 mx-auto mb-16 max-w-248 text-center md:mb-20 lg:mb-24">
           <h1 className="h1 mb-6">
             Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
             <span className="relative inline-block">
@@ -46,17 +46,15 @@ const Hero = () => {
           </Button>
         </div>
 
-        <div
-          className={cn("relative mx-auto max-w-[23rem] md:max-w-5xl xl:mb-24")}
-        >
+        <div className={cn("relative mx-auto max-w-92 md:max-w-5xl xl:mb-24")}>
           <div
             className={cn("relative z-1 rounded-2xl bg-conic-gradient p-0.5")}
           >
-            <div className={cn("relative rounded-[1rem] bg-n-8")}>
+            <div className={cn("relative rounded-2xl bg-n-8")}>
               <div className={cn("h-[1.4rem] rounded-t-[0.9rem] bg-n-10")} />
               <div
                 className={cn(
-                  "aspect-[33/40] overflow-hidden rounded-b-[0.9rem] md:aspect-[688/490] lg:aspect-[1024/490]"
+                  "aspect-33/40 overflow-hidden rounded-b-[0.9rem] md:aspect-688/490 lg:aspect-1024/490"
                 )}
               >
                 <Image
@@ -68,10 +66,10 @@ const Hero = () => {
                   width={1024}
                 />
 
-                <Generating className="absolute inset-x-4 bottom-5 md:right-auto md:bottom-8 md:left-1/2 md:w-[31rem] md:-translate-x-1/2" />
+                <Generating className="absolute inset-x-4 bottom-5 md:right-auto md:bottom-8 md:left-1/2 md:w-124 md:-translate-x-1/2" />
 
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="absolute bottom-[7.5rem] left-[-5.5rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 p-1 backdrop-blur xl:flex">
+                  <ul className="absolute bottom-30 -left-22 hidden rounded-2xl border border-n-1/10 bg-n-9/40 p-1 backdrop-blur-sm xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
                         <Image alt="" height={24} src={icon} width={24} />
@@ -82,7 +80,7 @@ const Hero = () => {
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
-                    className="absolute right-[-5.5rem] bottom-44 hidden w-72 xl:flex"
+                    className="absolute -right-22 bottom-44 hidden w-72 xl:flex"
                     title="Code generation"
                   />
                 </ScrollParallax>
