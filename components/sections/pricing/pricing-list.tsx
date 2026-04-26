@@ -12,7 +12,11 @@ const PricingList = () => {
 
   return (
     <div className="flex flex-col gap-4 max-lg:flex-wrap">
-      <div className="mx-auto mb-6 flex w-fit rounded-full bg-n-6/50 p-1 shadow-sm">
+      <div
+        aria-label="Billing frequency"
+        className="mx-auto mb-6 flex w-fit rounded-full bg-n-6/50 p-1 shadow-xs"
+        role="tablist"
+      >
         <Tab
           selected={selected === "Monthly"}
           setSelected={() => setSelected("Monthly")}
@@ -34,15 +38,15 @@ const PricingList = () => {
 
           return (
             <div
-              className="h-full w-[19rem] rounded-[2rem] border border-n-6 bg-n-8 px-6 odd:my-4 odd:py-8 even:py-14 max-lg:w-full lg:w-auto [&>h4]:first:text-color-2 [&>h4]:last:text-color-3 [&>h4]:even:text-color-1"
+              className="h-full w-76 rounded-4xl border border-n-6 bg-n-8 px-6 odd:my-4 odd:py-8 even:py-14 max-lg:w-full lg:w-auto first:[&>h4]:text-color-2 last:[&>h4]:text-color-3 even:[&>h4]:text-color-1"
               key={item.id}
             >
-              <h4 className="h4 mb-4">{item.title}</h4>
+              <h3 className="h4 mb-4">{item.title}</h3>
               <p className="body-2 mb-3 min-h-16 text-n-1/50">
                 {item.description}
               </p>
 
-              <div className="mb-6 flex h-[5.5rem] items-center">
+              <div className="mb-6 flex h-22 items-center">
                 {!!item.price && (
                   <>
                     <span className="h2">$</span>
@@ -70,12 +74,7 @@ const PricingList = () => {
                     className="flex items-start border-n-6 border-t py-5"
                     key={index}
                   >
-                    <Image
-                      alt="check"
-                      height={24}
-                      src={images.check}
-                      width={24}
-                    />
+                    <Image alt="" height={24} src={images.check} width={24} />
                     <p className="body-2 ml-4">{feature}</p>
                   </li>
                 ))}

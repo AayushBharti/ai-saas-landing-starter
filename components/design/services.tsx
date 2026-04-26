@@ -3,28 +3,32 @@ import ChatBubbleWing from "@/components/svg/chat-bubble-wing";
 import { images } from "@/constants";
 
 export const Gradient = () => (
-  <div className="-left-40 pointer-events-none absolute top-0 size-[56.625rem] opacity-50 mix-blend-color-dodge">
+  <div
+    aria-hidden="true"
+    className="pointer-events-none absolute top-0 -left-40 size-226.5 opacity-50 mix-blend-color-dodge"
+  >
     <Image
-      alt="Gradient"
-      className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 h-[88.5625rem] w-[79.5625rem] max-w-[79.5625rem]"
+      alt=""
+      className="absolute top-1/2 left-1/2 h-354.25 w-318.25 max-w-318.25 -translate-x-1/2 -translate-y-1/2"
       height={1417}
       src={images.gradient}
+      style={{ width: "auto", height: "auto" }}
       width={1417}
     />
   </div>
 );
 
 export const PhotoChatMessage = () => (
-  <div className="absolute top-8 right-8 max-w-[17.5rem] rounded-t-xl rounded-bl-xl bg-black px-8 py-6 font-code text-base lg:top-16 lg:right-[8.75rem] lg:max-w-[17.5rem]">
+  <div className="absolute top-8 right-8 max-w-70 rounded-t-xl rounded-bl-xl bg-black px-8 py-6 font-code text-base lg:top-16 lg:right-35 lg:max-w-70">
     Hey StarForge, enhance this photo
     <ChatBubbleWing className="absolute bottom-0 left-full" />
   </div>
 );
 
 export const VideoChatMessage = () => (
-  <div className="absolute top-8 left-[3.125rem] w-full max-w-56 rounded-t-xl rounded-br-xl bg-n-6 pt-2.5 pr-2.5 pb-7 pl-5 font-code text-base md:max-w-[17.5rem]">
+  <div className="absolute top-8 left-12.5 w-full max-w-56 rounded-t-xl rounded-br-xl bg-n-6 pt-2.5 pr-2.5 pb-7 pl-5 font-code text-base md:max-w-70">
     Video generated!
-    <div className="absolute bottom-[-1.125rem] left-5 flex size-9 items-center justify-center rounded-xl bg-color-1">
+    <div className="absolute -bottom-4.5 left-5 flex size-9 items-center justify-center rounded-xl bg-color-1">
       <Image
         alt="StarForge"
         height={26}
@@ -36,7 +40,7 @@ export const VideoChatMessage = () => (
       just now
     </p>
     <ChatBubbleWing
-      className="-scale-x-100 absolute right-full bottom-0"
+      className="absolute right-full bottom-0 -scale-x-100"
       pathClassName="fill-n-6"
     />
   </div>

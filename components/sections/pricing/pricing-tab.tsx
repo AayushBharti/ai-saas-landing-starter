@@ -16,18 +16,20 @@ export function Tab({
 }: TabProps) {
   return (
     <button
+      aria-selected={selected}
       className={cn(
         "relative w-fit px-4 py-2 font-semibold text-sm capitalize transition-colors",
         selected ? "text-n-1" : "text-n-3",
         !!discount && "flex items-center justify-center gap-2.5"
       )}
       onClick={() => setSelected(text)}
+      role="tab"
     >
       <span className="relative z-10">{text}</span>
 
       {!!selected && (
         <motion.span
-          className="absolute inset-0 z-0 rounded-full bg-n-5/80 shadow-sm"
+          className="absolute inset-0 z-0 rounded-full bg-n-5/80 shadow-xs"
           layoutId="tab"
           transition={{ type: "spring", duration: 0.4 }}
         />

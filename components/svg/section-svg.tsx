@@ -1,17 +1,22 @@
+import { cn } from "@/lib/utils";
 import PlusSvg from "./plus-svg";
 
 const SectionSvg = ({ crossesOffset }: { crossesOffset?: string }) => (
   <>
     <PlusSvg
-      className={`absolute top-[-0.3125rem] left-[1.5625rem] hidden ${
-        !!crossesOffset && crossesOffset
-      } pointer-events-none lg:block xl:left-[2.1875rem]`}
+      aria-hidden="true"
+      className={cn(
+        "pointer-events-none absolute -top-1.25 left-6.25 hidden lg:block xl:left-8.75",
+        crossesOffset
+      )}
     />
 
     <PlusSvg
-      className={`absolute top-[-0.3125rem] right-[1.5625rem] hidden ${
-        !!crossesOffset && crossesOffset
-      } pointer-events-none lg:block xl:right-[2.1875rem]`}
+      aria-hidden="true"
+      className={cn(
+        "pointer-events-none absolute -top-1.25 right-6.25 hidden lg:block xl:right-8.75",
+        crossesOffset
+      )}
     />
   </>
 );

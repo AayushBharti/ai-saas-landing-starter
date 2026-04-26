@@ -4,6 +4,8 @@ import ButtonSvg from "@/components/svg/button-svg";
 import { cn } from "@/lib/utils";
 
 type Props = {
+  "aria-expanded"?: boolean;
+  "aria-label"?: string;
   className?: string;
   href?: string;
   children: React.ReactNode;
@@ -13,6 +15,8 @@ type Props = {
 };
 
 const Button = ({
+  "aria-expanded": ariaExpanded,
+  "aria-label": ariaLabel,
   className,
   href = "",
   children,
@@ -31,7 +35,12 @@ const Button = ({
   const spanClasses = cn("relative z-10");
 
   const renderButton = () => (
-    <button className={buttonClasses} onClick={onClick}>
+    <button
+      aria-expanded={ariaExpanded}
+      aria-label={ariaLabel}
+      className={buttonClasses}
+      onClick={onClick}
+    >
       <span className={spanClasses}>{children}</span>
       {ButtonSvg(white)}
     </button>

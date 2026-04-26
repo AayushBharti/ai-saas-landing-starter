@@ -17,12 +17,12 @@ const Benefits = () => (
       <div className="mb-10 flex flex-wrap gap-8">
         {benefits.map((item) => (
           <div
-            className="relative block bg-[length:100%_100%] bg-no-repeat p-0.5 md:max-w-sm"
+            className="relative block bg-size-[100%_100%] bg-no-repeat p-0.5 md:max-w-sm"
             key={item.id}
             style={{ backgroundImage: `url(${item.backgroundUrl})` }}
           >
-            <div className="pointer-events-none relative z-2 flex min-h-[22rem] flex-col p-[2.4rem]">
-              <h5 className="h5 mb-5">{item.title}</h5>
+            <div className="pointer-events-none relative z-2 flex min-h-88 flex-col p-[2.4rem]">
+              <h3 className="h5 mb-5">{item.title}</h3>
               <p className="body-2 mb-6 text-n-3">{item.text}</p>
               <div className="mt-auto flex items-center">
                 <Image
@@ -51,6 +51,7 @@ const Benefits = () => (
                     className="size-full object-cover"
                     height={362}
                     src={item.imageUrl}
+                    style={{ width: "auto", height: "auto" }}
                     width={380}
                   />
                 )}

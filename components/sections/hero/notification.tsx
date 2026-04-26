@@ -10,19 +10,19 @@ type Props = {
 const Notification = ({ className, title }: Props) => (
   <div
     className={cn(
-      "flex items-center gap-5 rounded-2xl border border-n-1/10 bg-n-9/40 p-4 pr-6 backdrop-blur",
+      "flex items-center gap-5 rounded-2xl border border-n-1/10 bg-n-9/40 p-4 pr-6 backdrop-blur-sm",
       className
     )}
   >
     <Image
-      alt="image"
+      alt="AI-generated notification preview"
       className="rounded-xl"
       height={62}
       src={images.notification1}
       width={62}
     />
     <div className="flex-1">
-      <h6 className="mb-1 justify-between font-semibold text-base">{title}</h6>
+      <p className="mb-1 justify-between font-semibold text-base">{title}</p>
 
       <div className="flex items-center justify-between">
         <ul className="-m-0.5 flex">
@@ -32,7 +32,7 @@ const Notification = ({ className, title }: Props) => (
               key={index}
             >
               <Image
-                alt={item}
+                alt=""
                 className="w-full"
                 height={20}
                 src={item}

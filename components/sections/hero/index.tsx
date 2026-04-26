@@ -29,8 +29,8 @@ const Hero = () => {
             <span className="relative inline-block">
               StarForge
               <Image
-                alt="curve"
-                className="xl:-mt-2 absolute top-full left-0 w-full"
+                alt=""
+                className="absolute top-full left-0 w-full xl:-mt-2"
                 height={28}
                 src={images.curve}
                 width={624}
@@ -63,17 +63,18 @@ const Hero = () => {
                   alt="AI"
                   className="w-full translate-y-[8%] scale-[1.7] md:translate-y-[-10%] md:scale-100 lg:translate-y-[-23%]"
                   height={490}
+                  loading="eager"
                   src={images.robot}
                   width={1024}
                 />
 
-                <Generating className="md:-translate-x-1/2 absolute inset-x-4 bottom-5 md:right-auto md:bottom-8 md:left-1/2 md:w-[31rem]" />
+                <Generating className="absolute inset-x-4 bottom-5 md:right-auto md:bottom-8 md:left-1/2 md:w-[31rem] md:-translate-x-1/2" />
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <ul className="absolute bottom-[7.5rem] left-[-5.5rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 p-1 backdrop-blur xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
-                        <Image alt={icon} height={24} src={icon} width={25} />
+                        <Image alt="" height={24} src={icon} width={24} />
                       </li>
                     ))}
                   </ul>
@@ -90,11 +91,12 @@ const Hero = () => {
 
             <Gradient />
           </div>
-          <div className="-translate-x-1/2 absolute top-[-54%] left-1/2 w-[234%] md:top-[-46%] md:w-[138%] lg:top-[-104%]">
+          <div className="absolute top-[-54%] left-1/2 w-[234%] -translate-x-1/2 md:top-[-46%] md:w-[138%] lg:top-[-104%]">
             <Image
-              alt="hero"
+              alt=""
               className="w-full"
               height={1880}
+              loading="eager"
               src={images.heroBackground}
               width={1440}
             />
