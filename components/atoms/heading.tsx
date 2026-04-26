@@ -13,10 +13,7 @@ const Heading = ({
   tag?: string;
 }) => (
   <div
-    className={cn(
-      className,
-      "mx-auto mb-12 max-w-[50rem] md:text-center lg:mb-20"
-    )}
+    className={cn(className, "mx-auto mb-12 max-w-200 md:text-center lg:mb-20")}
   >
     {!!tag && <TagLine className="mb-4 md:justify-center">{tag}</TagLine>}
     {!!title && <h2 className="h2">{title}</h2>}

@@ -1,90 +1,180 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ============================================
+   Theme
+   ============================================ */
 
-:root {
-  --font-sora: "Sora", sans-serif;
-  --font-code: "Source Code Pro", monospace;
-  --font-grotesk: "Space Grotesk", sans-serif;
+@theme {
+  /* Colors */
+  --color-color-1: #ac6aff;
+  --color-color-2: #ffc876;
+  --color-color-3: #ff776f;
+  --color-stroke-1: #26242c;
+  --color-n-1: #ffffff;
+  --color-n-2: #cac6dd;
+  --color-n-3: #ada8c3;
+  --color-n-4: #757185;
+  --color-n-5: #3f3a52;
+  --color-n-6: #252134;
+  --color-n-7: #15131d;
+  --color-n-8: #0e0c15;
+  --color-n-9: #474060;
+  --color-n-10: #43435c;
+  --color-n-11: #1b1b2e;
+  --color-n-12: #2e2a41;
+  --color-n-13: #6c7275;
+
+  /* Fonts */
+  --font-sans:
+    "Sora", "Sora Fallback", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-code: "Source Code Pro", "Source Code Pro Fallback", monospace;
+  --font-grotesk: "Space Grotesk", "Space Grotesk Fallback", sans-serif;
+
+  /* Spacing & sizing */
+  --tracking-tagline: 0.15em;
+  --default-border-width: 0.0625rem;
+
+  /* Transitions */
+  --default-transition-duration: 200ms;
+  --default-transition-timing-function: linear;
+
+  /* Background images */
+  --background-image-radial-gradient: radial-gradient(var(--tw-gradient-stops));
+  --background-image-conic-gradient: conic-gradient(
+    from 225deg,
+    #ffc876,
+    #79fff7,
+    #9f53ff,
+    #ff98e2,
+    #ffc876
+  );
 }
 
-* {
-  scroll-behavior: smooth;
-}
+/* ============================================
+   Base
+   ============================================ */
 
 @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-sans bg-n-8 text-n-1 text-base;
   }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-color-1;
+  }
 }
 
-.rotate-45 {
-  @apply rotate-[45deg];
+/* ============================================
+   Layout utilities
+   ============================================ */
+
+@utility container {
+  @apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem];
 }
 
-.rotate-90 {
-  @apply rotate-[90deg];
+/* ============================================
+   Typography utilities
+   ============================================ */
+
+@utility h1 {
+  @apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem];
 }
 
-.rotate-135 {
-  @apply rotate-[135deg];
+@utility h2 {
+  @apply text-[1.75rem] leading-[2.5rem] md:text-[2rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-[3rem] xl:leading-tight;
 }
 
-.rotate-180 {
-  @apply rotate-[180deg];
+@utility h4 {
+  @apply text-[2rem] leading-normal;
 }
 
-.rotate-225 {
-  @apply rotate-[225deg];
+@utility h5 {
+  @apply text-2xl leading-normal;
 }
 
-.rotate-270 {
-  @apply rotate-[270deg];
+@utility h6 {
+  @apply font-semibold text-lg leading-8;
 }
 
-.rotate-315 {
-  @apply rotate-[315deg];
+@utility body-1 {
+  @apply text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8;
 }
 
-.rotate-360 {
-  @apply rotate-[360deg];
+@utility body-2 {
+  @apply font-light text-[0.875rem] leading-6 md:text-base;
 }
 
-.-rotate-45 {
-  @apply rotate-[-45deg];
+@utility caption {
+  @apply text-sm;
 }
 
-.-rotate-90 {
-  @apply rotate-[-90deg];
+@utility tagline {
+  @apply font-grotesk font-light text-xs tracking-tagline uppercase;
 }
 
-.-rotate-135 {
-  @apply rotate-[-135deg];
+@utility button {
+  @apply font-code text-xs font-bold uppercase tracking-wider;
 }
 
-.-rotate-180 {
-  @apply rotate-[-180deg];
+/* ============================================
+   Animation utilities
+   ============================================ */
+
+@utility animate-orbit {
+  animation: orbit calc(var(--duration, 1) * 1s) linear infinite;
 }
 
-.-rotate-225 {
-  @apply rotate-[-225deg];
+@utility animate-marquee {
+  animation: marquee calc(var(--duration, 40s)) linear infinite;
 }
 
-.-rotate-270 {
-  @apply rotate-[-270deg];
+@utility animate-marquee-vertical {
+  animation: marquee-vertical calc(var(--duration, 40s)) linear infinite;
 }
 
-.-rotate-315 {
-  @apply rotate-[-315deg];
+@keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--angle) * 1deg))
+      translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));
+  }
+  100% {
+    transform: rotate(calc(var(--angle) * 1deg + 360deg))
+      translateY(calc(var(--radius) * 1px))
+      rotate(calc((var(--angle) * -1deg) - 360deg));
+  }
 }
 
-.-rotate-360 {
-  @apply rotate-[-360deg];
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+/* ============================================
+   Component overrides
+   ============================================ */
 
 number-flow-react::part(suffix) {
   margin-left: 0.0625em;
