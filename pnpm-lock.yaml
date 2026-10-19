@@ -24,8 +24,8 @@ importers:
         specifier: 16.2.12
         version: 16.2.12(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.4(react@19.2.8))(react@19.2.8)
       prettier:
-        specifier: ^3.8.4
-        version: 3.8.4
+        specifier: ^3.9.10
+        version: 3.9.10
       react:
         specifier: ^19.2.8
         version: 19.2.8
@@ -71,7 +71,7 @@ importers:
         version: 6.0.3
       ultracite:
         specifier: 7.12.4
-        version: 7.12.4(@biomejs/biome@2.5.8)(prettier@3.8.4)
+        version: 7.12.4(@biomejs/biome@2.5.8)(prettier@3.9.10)
 
 packages:
 
@@ -965,8 +965,8 @@ packages:
   prefix@1.0.0:
     resolution: {integrity: sha512-KtGt8TV4nQkYgO6wJ5phkBGAECZW5cs5vQhqnz1LlxGGd8y4LwpW3Bq5pofULjdiMXACDCxisDUhwtFXb7vHfQ==}
 
-  prettier@3.8.4:
-    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
+  prettier@3.9.10:
+    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1892,7 +1892,7 @@ snapshots:
 
   prefix@1.0.0: {}
 
-  prettier@3.8.4: {}
+  prettier@3.9.10: {}
 
   pretty-ms@9.3.1:
     dependencies:
@@ -2018,7 +2018,7 @@ snapshots:
 
   ufo@1.6.4: {}
 
-  ultracite@7.12.4(@biomejs/biome@2.5.8)(prettier@3.8.4):
+  ultracite@7.12.4(@biomejs/biome@2.5.8)(prettier@3.9.10):
     dependencies:
       '@clack/prompts': 1.8.1
       cli-truncate: 6.1.1
@@ -2041,7 +2041,7 @@ snapshots:
       zod: 4.6.5
     optionalDependencies:
       '@biomejs/biome': 2.5.8
-      prettier: 3.8.4
+      prettier: 3.9.10
 
   undici-types@8.3.0: {}
 
